@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav .navItem > a {
+  display: block;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.nav .navItem > a:hover {
+  color: var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    display: block;
+  }
+  .nav .navItem {
+    text-align: center;
+  }
+}
